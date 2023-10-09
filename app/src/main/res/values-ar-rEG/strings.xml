@@ -2,4 +2,6 @@
 <resources>
     <string name="app_name">دكتور / مصطفى محمود</string>
     <string name="author">المؤلف</string>
+    <string name="des">الان يمكنك طلب طعام ف اى وقت</string>
+    <string name="quick">التوصيل السريع</string>
 </resources>
