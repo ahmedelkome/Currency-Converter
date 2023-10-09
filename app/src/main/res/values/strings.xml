@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">DR/Mostafa_mahmoud</string>
+    <string name="app_name" translatable="true">DR/Mostafa_mahmoud</string>
+    <string name="author" translatable="false">Author</string>
 </resources>
