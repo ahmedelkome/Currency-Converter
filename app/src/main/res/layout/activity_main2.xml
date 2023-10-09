@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    >
+
+    <ImageView
+        android:id="@+id/img1"
+        android:layout_width="208dp"
+        android:layout_height="133dp"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/m1" />
+    <TextView
+        android:text="Author"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img1"
+        android:gravity="center"
+        />
+
+    <ImageView
+        android:id="@+id/img2"
+        android:layout_width="141dp"
+        android:layout_height="238dp"
+        android:layout_below="@+id/img1"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="318dp"
+        android:layout_marginEnd="123dp"
+        android:layout_marginBottom="84dp"
+        android:src="@drawable/b1" />
+
+    <ImageView
+        android:id="@+id/img3"
+        android:layout_width="wrap_content"
+        android:layout_height="234dp"
+        android:layout_below="@+id/img1"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="-3dp"
+        android:layout_marginTop="318dp"
+        android:layout_marginEnd="272dp"
+        android:layout_marginBottom="87dp"
+        android:src="@drawable/b3" />
+
+    <ImageView
+        android:id="@+id/img4"
+        android:layout_width="wrap_content"
+        android:layout_height="230dp"
+        android:layout_below="@id/img1"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="296dp"
+        android:layout_marginTop="318dp"
+        android:layout_marginEnd="-8dp"
+        android:layout_marginBottom="90dp"
+        android:src="@drawable/b2" />
+
+    <Button
+        android:id="@+id/but"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="21dp"
+        android:text="Order"
+        android:textSize="24dp"
+        />
+
+
+</RelativeLayout>
