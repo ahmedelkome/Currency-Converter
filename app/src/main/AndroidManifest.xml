@@ -6,9 +6,9 @@
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/CURRENCY"
-        android:label="@string/app_name"
-        android:roundIcon="@mipmap/CURRENCY"
+        android:icon="@mipmap/c1"
+        android:label="@string/currency"
+        android:roundIcon="@mipmap/c1"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
