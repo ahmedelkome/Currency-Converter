@@ -8,7 +8,7 @@ import android.widget.Button
 import android.widget.Toast
 import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.textfield.TextInputEditText
-
+//ahmed elkomy
 class Currency_Converter : AppCompatActivity() {
     val egypt ="Egyption pound"
     val america ="American dollar"
