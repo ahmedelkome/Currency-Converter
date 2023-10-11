@@ -16,8 +16,9 @@ class Currency_Converter : AppCompatActivity() {
     val values = mapOf(
         america to 1.0 ,
         egypt to 30.90 ,
+        GBP to 38.01,
         AED to 8.41 ,
-        GBP to 38.01
+
     )
     lateinit var  convert : Button
     lateinit var amountEt : TextInputEditText
@@ -33,7 +34,7 @@ class Currency_Converter : AppCompatActivity() {
             val amount = amountEt.text.toString().toDouble()
             val tovalue =values [list.text.toString()]
             val fromvalue = values[from.text.toString()]
-            val result = amount.times(tovalue!!.div(fromvalue!!))
+            val result = (amount.times(tovalue!!)).div(fromvalue!!)
             resultEt.setText(result.toString())
         }
 
