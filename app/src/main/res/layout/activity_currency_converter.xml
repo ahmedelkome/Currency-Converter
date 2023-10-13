@@ -6,6 +6,15 @@
     android:layout_height="match_parent"
     tools:context=".Currency_Converter">
 
+    <Toolbar
+        android:id="@+id/tool"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout4"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"

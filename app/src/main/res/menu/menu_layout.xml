@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/share_action"
+        android:title="share"
+        android:icon="@drawable/share_24"
+        app:showAsAction="ifRoom"
+        />
+    <item
+        android:id="@+id/settings_action"
+        android:title="Settings"
+        android:icon="@drawable/settings_suggest_24"
+        app:showAsAction="ifRoom"
+        />
+    <item
+        android:id="@+id/contact_action"
+        android:title="Contact us"
+        android:icon="@drawable/contact_24"
+        app:showAsAction="always"
+        >
+        <menu>
+            <item
+                android:id="@+id/phone"
+                android:title="By phone"/>
+            <item
+                android:id="@+id/email"
+                android:title="By email"/>
+        </menu>
+    </item>
+</menu>
