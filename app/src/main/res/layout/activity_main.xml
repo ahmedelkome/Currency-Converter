@@ -11,13 +11,13 @@
         android:id="@+id/imageView3"
         android:layout_width="89dp"
         android:layout_height="102dp"
-        android:layout_marginTop="168dp"
+        android:layout_marginTop="60dp"
         android:layout_marginEnd="104dp"
         android:foregroundGravity="center"
         android:scaleType="centerCrop"
         android:src="@mipmap/ahmed"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.66"
+        app:layout_constraintHorizontal_bias="0.738"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
