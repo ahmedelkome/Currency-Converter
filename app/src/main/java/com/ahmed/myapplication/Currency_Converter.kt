@@ -1,6 +1,7 @@
 package com.ahmed.myapplication
 
 import android.app.ActionBar
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
@@ -65,15 +66,21 @@ class Currency_Converter : AppCompatActivity() {
             }
             toolbar.inflateMenu(R.menu.menu_layout)
             toolbar.setOnMenuItemClickListener { MenuItem ->
-                when (MenuItem.itemId) {
-                    R.id.share_action ->
-                        Toast.makeText(this, "share selected", Toast.LENGTH_LONG).show()
+                if (MenuItem.itemId== R.id.share_action) {
+                        var message =
+                        "${amountEt.text.toString()} ${from.text.toString()} is equal " +
+                                "${resultEt.text.toString()} ${list.text.toString()}"
+                    var share=Intent(Intent.ACTION_SEND)
+                    share.type="text/plain"
+                    share.putExtra(Intent.EXTRA_TEXT,message)
+                    if (share.resolveActivity(packageManager) != null)
+                    {
+                        startActivity(share)
 
-                    R.id.settings_action ->
-                        Toast.makeText(this, "settings selected", Toast.LENGTH_LONG).show()
+                    }else{
+                        Toast.makeText(this,"no application can do that",Toast.LENGTH_LONG).show()
+                    }
 
-                    R.id.contact_action ->
-                        Toast.makeText(this, "contact selected", Toast.LENGTH_LONG).show()
                 }
                 true
 
